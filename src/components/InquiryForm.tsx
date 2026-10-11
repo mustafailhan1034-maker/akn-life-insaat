@@ -42,15 +42,15 @@ export default function InquiryForm({ heading = "Mesaj bırakın", subject }: In
       <div className="mt-6 space-y-4">
         <label className="block">
           <span className="sr-only">Adınız soyadınız</span>
-          <input name="name" required autoComplete="name" placeholder="Adınız soyadınız" className="min-h-12 w-full border border-[#2b2c2e]/15 bg-white px-4 py-3 text-base text-[#2b2c2e] outline-none focus:border-gold" />
+          <input name="name" required autoComplete="name" placeholder="Adınız soyadınız" className="min-h-12 w-full border border-white/15 bg-[#181D23] px-4 py-3 text-base text-[#E2E8F0] outline-none focus:border-[#7B90A8]" />
         </label>
         <label className="block">
           <span className="sr-only">Telefon numaranız</span>
-          <input name="phone" required type="tel" autoComplete="tel" placeholder="Telefon numaranız" className="min-h-12 w-full border border-[#2b2c2e]/15 bg-white px-4 py-3 text-base text-[#2b2c2e] outline-none focus:border-gold" />
+          <input name="phone" required type="tel" autoComplete="tel" placeholder="Telefon numaranız" className="min-h-12 w-full border border-white/15 bg-[#181D23] px-4 py-3 text-base text-[#E2E8F0] outline-none focus:border-[#7B90A8]" />
         </label>
         <label className="block">
           <span className="sr-only">Proje veya talebiniz</span>
-          <textarea name="message" required rows={4} placeholder="Proje veya talebiniz" className="w-full resize-none border border-[#2b2c2e]/15 bg-white px-4 py-3 text-base text-[#2b2c2e] outline-none focus:border-gold" />
+          <textarea name="message" required rows={4} placeholder="Proje veya talebiniz" className="w-full resize-none border border-white/15 bg-[#181D23] px-4 py-3 text-base text-[#E2E8F0] outline-none focus:border-[#7B90A8]" />
         </label>
         <button type="submit" className="min-h-12 w-full bg-gold px-5 py-3.5 text-xs font-semibold tracking-[0.14em] text-navy uppercase hover:bg-gold-soft">
           {hasWhatsapp() ? "WhatsApp ile gönder" : "Mesajı hazırla"}

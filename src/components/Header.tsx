@@ -77,8 +77,8 @@ export default function Header() {
   const linkClass = (active: boolean) =>
     solid
       ? active
-        ? "text-gold-dark"
-        : "text-[#2b2c2e]/75 hover:text-gold-dark"
+        ? "text-[#C4D1DF]"
+        : "text-[#E2E8F0]/75 hover:text-[#C4D1DF]"
       : active
         ? "text-gold-soft"
         : "text-white/90 hover:text-gold-soft";
@@ -88,7 +88,7 @@ export default function Header() {
       <header
         className={`fixed inset-x-0 top-0 z-50 w-full px-8 py-2.5 transition duration-300 lg:px-16 ${
           solid
-            ? "border-b border-[#2b2c2e]/10 bg-[#fbfbfa]/92 shadow-sm backdrop-blur"
+            ? "border-b border-white/10 bg-[#181D23]/92 shadow-sm backdrop-blur"
             : "border-b border-transparent bg-transparent"
         }`}
       >
@@ -135,13 +135,13 @@ export default function Header() {
                     <ChevronDown className={`ml-1 h-4 w-4 transition ${menuOpen ? "rotate-180" : ""}`} />
                   </Link>
                   <div className={`absolute top-full left-1/2 z-50 -translate-x-1/2 pt-4 ${menuOpen ? "visible" : "invisible"}`}>
-                    <div className={`max-h-[70vh] min-w-[280px] overflow-y-auto border border-[#2b2c2e]/10 bg-[#fbfbfa] p-2 shadow-2xl transition duration-150 ${menuOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0"}`}>
+                    <div className={`max-h-[70vh] min-w-[280px] overflow-y-auto border border-white/10 bg-[#1F2630] p-2 shadow-2xl transition duration-150 ${menuOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0"}`}>
                       <ul>
                         {link.children.map((child) => (
                           <li key={child.href + child.label}>
                             <Link
                               href={child.href}
-                              className="block min-h-12 px-4 py-3 font-sans text-base font-medium tracking-wide text-[#2b2c2e] hover:bg-gold/15 hover:text-gold-dark"
+                              className="block min-h-12 px-4 py-3 font-sans text-base font-medium tracking-wide text-[#E2E8F0] hover:bg-[#7B90A8]/15 hover:text-[#C4D1DF]"
                             >
                               {child.label}
                             </Link>
@@ -157,14 +157,14 @@ export default function Header() {
           <Link
             href="/iletisim"
             className={`hidden shrink-0 items-center gap-2 px-5 py-2 font-sans text-sm font-medium tracking-wider uppercase xl:inline-flex ${
-              solid ? "bg-navy text-[#f4f3ef] hover:bg-gold hover:text-navy" : "border border-gold text-gold-soft hover:bg-gold hover:text-navy"
+              solid ? "bg-[#7B90A8] text-[#181D23] hover:bg-[#C4D1DF]" : "border border-[#C4D1DF]/80 text-[#C4D1DF] hover:bg-[#7B90A8] hover:text-[#181D23]"
             }`}
           >
             İletişim
           </Link>
           <button
             type="button"
-            className={`inline-flex h-11 w-11 shrink-0 items-center justify-center border xl:hidden ${solid ? "border-[#2b2c2e]/20 text-[#2b2c2e]" : "border-white/40 text-white"}`}
+            className={`inline-flex h-11 w-11 shrink-0 items-center justify-center border xl:hidden ${solid ? "border-white/25 text-[#E2E8F0]" : "border-white/40 text-white"}`}
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
@@ -177,13 +177,13 @@ export default function Header() {
 
       <div
         id="mobile-menu"
-        className={`fixed inset-0 z-[70] bg-[#fbfbfa] text-[#2b2c2e] transition xl:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`fixed inset-0 z-[70] bg-[#181D23] text-[#E2E8F0] transition xl:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
         aria-hidden={!open}
       >
         <div className="flex h-full flex-col px-8 pt-2.5 pb-10">
-          <div className="flex items-center justify-between border-b border-[#2b2c2e]/10">
+          <div className="flex items-center justify-between border-b border-white/10">
             <BrandLogo tone="light" priority size="header" onClick={(event) => goHome(event, "/")} />
-            <button type="button" className="inline-flex h-11 w-11 shrink-0 items-center justify-center border border-[#2b2c2e]/20 text-[#2b2c2e]" aria-label="Menüyü kapat" onClick={closeMobile}>
+            <button type="button" className="inline-flex h-11 w-11 shrink-0 items-center justify-center border border-white/25 text-[#E2E8F0]" aria-label="Menüyü kapat" onClick={closeMobile}>
               <X className="h-5 w-5" />
             </button>
           </div>
@@ -193,16 +193,16 @@ export default function Header() {
               const expanded = mobileOpenKey === key;
               if (!link.children?.length) {
                 return (
-                  <Link key={key} href={link.href} scroll className="border-b border-[#2b2c2e]/10 py-4 font-serif text-3xl text-[#2b2c2e]" onClick={(event) => goHome(event, link.href)}>
+                  <Link key={key} href={link.href} scroll className="border-b border-white/10 py-4 font-serif text-3xl text-[#E2E8F0]" onClick={(event) => goHome(event, link.href)}>
                     {link.label.tr}
                   </Link>
                 );
               }
               return (
-                <div key={key} className="border-b border-[#2b2c2e]/10">
+                <div key={key} className="border-b border-white/10">
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between py-4 text-left font-serif text-3xl text-[#2b2c2e]"
+                    className="flex w-full items-center justify-between py-4 text-left font-serif text-3xl text-[#E2E8F0]"
                     aria-expanded={expanded}
                     onClick={() => setMobileOpenKey((current) => (current === key ? null : key))}
                   >
@@ -214,7 +214,7 @@ export default function Header() {
                       Tümünü gör
                     </Link>
                     {link.children.map((child) => (
-                      <Link key={child.href} href={child.href} className="flex min-h-12 items-center px-2 text-base text-[#2b2c2e]/80" onClick={closeMobile}>
+                      <Link key={child.href} href={child.href} className="flex min-h-12 items-center px-2 text-base text-[#94A3B8]" onClick={closeMobile}>
                         {child.label}
                       </Link>
                     ))}

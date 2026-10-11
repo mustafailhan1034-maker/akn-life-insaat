@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbfbfa;
-  --foreground: #2b2c2e;
-  --surface: #ffffff;
-  --beige: #f4f3ef;
-  --stone: #f4f3ef;
-  --cream: #2b2c2e;
-  --muted: #6a675f;
-  --gold: #c5a880;
-  --gold-soft: #e6d3b3;
-  --gold-dark: #8c7350;
-  --navy: #1a1c1e;
-  --line: rgba(43, 44, 46, 0.12);
-  --line-gold: rgba(184, 155, 114, 0.7);
+  --background: #181d23;
+  --foreground: #e2e8f0;
+  --surface: #1f2630;
+  --beige: #1f2630;
+  --stone: #1f2630;
+  --cream: #e2e8f0;
+  --muted: #94a3b8;
+  --gold: #7b90a8;
+  --gold-soft: #c4d1df;
+  --gold-dark: #c4d1df;
+  --navy: #1f2630;
+  --line: rgba(196, 209, 223, 0.16);
+  --line-gold: rgba(123, 144, 168, 0.85);
   --header-offset: 4.75rem;
 }
 
@@ -56,8 +56,8 @@ html {
 body {
   background-color: var(--background);
   background-image:
-    radial-gradient(900px 420px at 0% -10%, rgba(197, 168, 128, 0.16), transparent 55%),
-    radial-gradient(700px 380px at 100% 0%, rgba(244, 243, 239, 0.8), transparent 42%);
+    radial-gradient(900px 420px at 0% -10%, rgba(74, 96, 122, 0.28), transparent 55%),
+    radial-gradient(700px 380px at 100% 0%, rgba(31, 38, 48, 0.9), transparent 42%);
   color: var(--foreground);
   font-family: var(--font-outfit), "Segoe UI", sans-serif;
   padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
@@ -74,8 +74,8 @@ section[id] {
 }
 
 ::selection {
-  background: #c5a880;
-  color: #1a1c1e;
+  background: #4a607a;
+  color: #e2e8f0;
 }
 
 input,
@@ -85,7 +85,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(43, 44, 46, 0.45);
+  color: rgba(148, 163, 184, 0.72);
 }
 
 @keyframes fade-up {

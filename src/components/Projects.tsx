@@ -65,7 +65,7 @@ export default function Projects({ titleTag = "h2" }: { titleTag?: "h1" | "h2" }
                   aria-selected={active}
                   onClick={() => select(item.id)}
                   className={`h-11 px-4 text-[11px] font-semibold tracking-[0.16em] uppercase transition ${
-                    active ? "bg-[#1a1c1e] text-[#f4f3ef]" : "border border-black/10 bg-[#fbfbfa] text-[#2b2c2e] hover:border-[#c5a880]"
+                    active ? "bg-[#7B90A8] text-[#181D23]" : "border border-white/15 bg-[#1F2630] text-[#E2E8F0] hover:border-[#7B90A8]"
                   }`}
                 >
                   {item.label}
@@ -80,7 +80,7 @@ export default function Projects({ titleTag = "h2" }: { titleTag?: "h1" | "h2" }
             <Link
               key={project.title}
               href={project.href}
-              className={`group relative block min-h-[22rem] overflow-hidden border border-black/[0.08] ${index === 0 ? "md:min-h-[28rem]" : ""}`}
+              className={`group relative block min-h-[22rem] overflow-hidden border border-white/10 ${index === 0 ? "md:min-h-[28rem]" : ""}`}
             >
               <Image
                 src={project.image}
@@ -89,8 +89,8 @@ export default function Projects({ titleTag = "h2" }: { titleTag?: "h1" | "h2" }
                 className="object-cover transition duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1a1c1e] via-[#1a1c1e]/25 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6 text-[#f4f3ef] sm:p-8">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#181D23] via-[#181D23]/25 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-6 text-[#E2E8F0] sm:p-8">
                 <p className="text-[11px] tracking-[0.22em] text-gold-soft uppercase">{BADGE[tab]} · {project.kind}</p>
                 <h3 className="mt-3 font-serif text-3xl">{project.title}</h3>
                 <p className="mt-2 max-w-md text-sm leading-relaxed text-white/75">{project.text}</p>

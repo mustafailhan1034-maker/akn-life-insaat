@@ -7,14 +7,14 @@ const STATS = [
 
 export default function StatsBand() {
   return (
-    <section className="border-y border-black/[0.08] bg-[#f4f3ef]" aria-label="Kapsam">
+    <section className="border-y border-white/10 bg-[#1F2630]" aria-label="Kapsam">
       <div className="container-wide grid grid-cols-2 lg:grid-cols-4">
         {STATS.map((item, index) => (
           <div
             key={item.label}
-            className={`px-6 py-10 sm:px-8 sm:py-14 ${index % 2 === 0 ? "border-black/[0.08]" : ""} ${index < 2 ? "border-b lg:border-b-0" : ""} ${index !== 3 ? "lg:border-r lg:border-black/[0.08]" : ""}`}
+            className={`px-6 py-10 sm:px-8 sm:py-14 ${index % 2 === 0 ? "border-white/10" : ""} ${index < 2 ? "border-b lg:border-b-0" : ""} ${index !== 3 ? "lg:border-r lg:border-white/10" : ""}`}
           >
-            <p className="font-serif text-4xl text-[#1a1c1e] sm:text-5xl">{item.value}</p>
+            <p className="font-serif text-4xl text-[#E2E8F0] sm:text-5xl">{item.value}</p>
             <p className="mt-3 text-[11px] tracking-[0.2em] text-gold-dark uppercase">{item.label}</p>
           </div>
         ))}

@@ -21,13 +21,13 @@ export default function FloatingActions() {
         <a href={primaryHref} target="_blank" rel="noopener noreferrer" aria-label={hasWhatsapp() ? "WhatsApp ile yazın" : "Yol tarifi"} className={`inline-flex h-14 w-14 items-center justify-center rounded-full shadow-lg ${hasWhatsapp() ? "bg-[#25D366] text-white" : "bg-gold text-navy"}`}>
           {hasWhatsapp() ? <WhatsAppIcon className="h-7 w-7" /> : <MapPin className="h-5 w-5" />}
         </a>
-        <a href={secondaryHref} aria-label={hasPhone() ? "Hemen ara" : "İletişim"} className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-[#2b2c2e]/15 bg-[#fbfbfa] text-[#2b2c2e] shadow-lg hover:bg-navy hover:text-[#f4f3ef]">
+        <a href={secondaryHref} aria-label={hasPhone() ? "Hemen ara" : "İletişim"} className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-[#1F2630] text-[#E2E8F0] shadow-lg hover:bg-[#7B90A8] hover:text-[#181D23]">
           {hasPhone() ? <Phone className="h-5 w-5" /> : <MessageSquare className="h-5 w-5" />}
         </a>
       </div>
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#2b2c2e]/10 bg-[#fbfbfa]/95 px-3 pt-2.5 pb-[max(0.65rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-[#181D23]/95 px-3 pt-2.5 pb-[max(0.65rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden">
         <div className="mx-auto grid max-w-lg grid-cols-2 gap-2">
-          <a href={secondaryHref} className="flex h-12 items-center justify-center gap-2 border border-[#2b2c2e]/15 text-[13px] font-semibold text-[#2b2c2e]">
+          <a href={secondaryHref} className="flex h-12 items-center justify-center gap-2 border border-white/15 text-[13px] font-semibold text-[#E2E8F0]">
             {hasPhone() ? <Phone className="h-4 w-4" aria-hidden /> : <MessageSquare className="h-4 w-4" aria-hidden />}
             {hasPhone() ? "Ara" : "İletişim"}
           </a>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function UrbanBanner() {
   return (
-    <section className="relative isolate min-h-[32rem] overflow-hidden bg-[#1a1c1e] text-[#f4f3ef]">
+    <section className="relative isolate min-h-[32rem] overflow-hidden bg-[#181D23] text-[#E2E8F0]">
       <div
         className="absolute inset-0 bg-cover bg-center md:bg-fixed"
         style={{

@@ -185,7 +185,7 @@ export default function HeroSlider() {
     "grid h-12 w-12 place-items-center text-white/90 transition duration-300 hover:text-white";
 
   return (
-    <section id="anasayfa" className="relative w-full overflow-hidden bg-[#1a1c1e]" aria-roledescription="carousel" aria-label="AKN Life İnşaat mimari slaytları">
+    <section id="anasayfa" className="relative w-full overflow-hidden bg-[#181D23]" aria-roledescription="carousel" aria-label="AKN Life İnşaat mimari slaytları">
       <div
         className="relative h-[78svh] min-h-[34rem] w-full overflow-hidden lg:h-[min(76svh,56.25vw)] lg:min-h-[28rem]"
         onPointerDown={onPointerDown}
@@ -227,8 +227,8 @@ export default function HeroSlider() {
           ))}
         </div>
 
-        <div className="pointer-events-none absolute inset-0 bg-[#1a1c1e]/42" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1a1c1e]/55 via-transparent to-[#1a1c1e]/35" />
+        <div className="pointer-events-none absolute inset-0 bg-[#181D23]/42" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#181D23]/55 via-transparent to-[#181D23]/35" />
 
         <div className="absolute inset-0 z-10 flex items-center justify-center px-16 pt-24 pb-16 text-center sm:px-28">
           <div key={slide.id} className="hero-stagger-2 w-full max-w-3xl">
@@ -238,10 +238,10 @@ export default function HeroSlider() {
             <h1 className="mt-4 font-serif text-[2.15rem] leading-[1.05] text-white sm:text-5xl lg:text-6xl">{slide.heading}</h1>
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">{slide.subheading}</p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Link href={slide.href} className="pointer-events-auto inline-flex min-h-12 items-center justify-center bg-[#C5A880] px-6 text-xs font-semibold tracking-[0.16em] text-[#1a1c1e] uppercase transition duration-300 hover:bg-[#E6D3B3]">
+              <Link href={slide.href} className="pointer-events-auto inline-flex min-h-12 items-center justify-center bg-[#7B90A8] px-6 text-xs font-semibold tracking-[0.16em] text-[#181D23] uppercase transition duration-300 hover:bg-[#C4D1DF]">
                 Hizmeti incele
               </Link>
-              <Link href="/iletisim" className="pointer-events-auto inline-flex min-h-12 items-center justify-center border border-white/55 px-6 text-xs font-semibold tracking-[0.16em] text-white uppercase transition duration-300 hover:border-[#C5A880] hover:text-[#E6D3B3]">
+              <Link href="/iletisim" className="pointer-events-auto inline-flex min-h-12 items-center justify-center border border-white/55 px-6 text-xs font-semibold tracking-[0.16em] text-white uppercase transition duration-300 hover:border-[#C4D1DF] hover:text-[#C4D1DF]">
                 İletişime geçin
               </Link>
             </div>

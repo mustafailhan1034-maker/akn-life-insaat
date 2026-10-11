@@ -24,7 +24,7 @@ export default function Features() {
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Doğru mühendislik, seçici malzeme, şeffaf süreç ve estetik bütünlük aynı ilkenin parçasıdır: söz verilen kaliteyi planlı ve izlenebilir biçimde hayata geçirmek.
           </p>
-          <Link href="/kurumsal" className="mt-8 inline-flex h-11 items-center border border-[#2b2c2e]/15 px-5 text-xs font-semibold tracking-[0.16em] text-[#2b2c2e] uppercase hover:border-[#c5a880] hover:text-gold-dark">
+          <Link href="/kurumsal" className="mt-8 inline-flex h-11 items-center border border-white/20 px-5 text-xs font-semibold tracking-[0.16em] text-[#E2E8F0] uppercase hover:border-[#7B90A8] hover:text-[#C4D1DF]">
             Kurumsal sayfa
           </Link>
         </div>

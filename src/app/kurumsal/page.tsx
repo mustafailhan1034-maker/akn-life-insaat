@@ -20,7 +20,7 @@ export default function KurumsalPage() {
     <>
       <Header />
       <main className="flex-1 bg-background">
-        <section className="relative flex min-h-[70svh] items-end overflow-hidden bg-[#1a1c1e] text-[#f4f3ef]">
+        <section className="relative flex min-h-[70svh] items-end overflow-hidden bg-[#181D23] text-[#E2E8F0]">
           <Image
             src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&h=1080&q=80"
             alt="Akşam ışığında modern bir konut cephesi"
@@ -29,7 +29,7 @@ export default function KurumsalPage() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1c1e] via-[#1a1c1e]/55 to-[#1a1c1e]/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181D23] via-[#181D23]/55 to-[#181D23]/20" />
           <div className="container-wide relative pb-16 pt-40">
             <p className="text-[11px] tracking-[0.28em] text-gold-soft uppercase">AKN Life İnşaat</p>
             <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-tight sm:text-6xl">Kurumsal</h1>
@@ -57,7 +57,7 @@ export default function KurumsalPage() {
           </div>
           <div className="container-wide mt-16 grid gap-6 md:grid-cols-3">
             {CORPORATE_PAGES.map((page) => (
-              <Link key={page.slug} href={`/kurumsal/${page.slug}`} className="group border border-black/[0.08] bg-[#f4f3ef]">
+              <Link key={page.slug} href={`/kurumsal/${page.slug}`} className="group border border-white/10 bg-[#1F2630]">
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <Image
                     src={page.image}
@@ -70,7 +70,7 @@ export default function KurumsalPage() {
                 <div className="p-6">
                   <p className="text-[11px] tracking-[0.2em] text-gold-dark uppercase">{page.name}</p>
                   <h3 className="mt-3 font-serif text-2xl text-cream">{page.title}</h3>
-                  <p className="mt-4 text-sm tracking-[0.14em] text-[#2b2c2e] uppercase">Sayfayı aç</p>
+                  <p className="mt-4 text-sm tracking-[0.14em] text-[#C4D1DF] uppercase">Sayfayı aç</p>
                 </div>
               </Link>
             ))}

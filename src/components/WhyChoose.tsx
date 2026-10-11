@@ -26,7 +26,7 @@ export default function WhyChoose() {
           {FEATURES.map((feature) => {
             const Icon = ICONS[feature.icon];
             return (
-              <article key={feature.title} className="border border-[#2b2c2e]/10 bg-surface px-6 py-8 transition duration-300 hover:-translate-y-1 hover:border-gold">
+              <article key={feature.title} className="border border-white/10 bg-surface px-6 py-8 transition duration-300 hover:-translate-y-1 hover:border-[#7B90A8]">
                 <div className="mb-5 inline-flex h-11 w-11 items-center justify-center border border-gold text-gold-dark">
                   <Icon className="h-4 w-4" aria-hidden />
                 </div>

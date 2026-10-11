@@ -60,7 +60,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1c1e] via-[#1a1c1e]/45 to-[#1a1c1e]/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181D23] via-[#181D23]/45 to-[#181D23]/15" />
           <div className="absolute inset-x-0 bottom-0 mx-auto max-w-5xl px-6 pb-10 lg:px-12">
             <nav aria-label="Sayfa yolu" className="mb-5 text-sm text-white/75">
               <Link href="/" className="hover:text-white">Ana sayfa</Link>

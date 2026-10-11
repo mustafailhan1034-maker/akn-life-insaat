@@ -48,9 +48,9 @@ export default async function CorporateDetailPage({ params }: CorporateRouteProp
       />
       <Header />
       <main className="flex-1 bg-background">
-        <section className="relative flex min-h-[68svh] items-end overflow-hidden bg-[#1a1c1e] text-[#f4f3ef]">
+        <section className="relative flex min-h-[68svh] items-end overflow-hidden bg-[#181D23] text-[#E2E8F0]">
           <Image src={page.image} alt={page.alt} fill priority className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1c1e] via-[#1a1c1e]/50 to-[#1a1c1e]/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181D23] via-[#181D23]/50 to-[#181D23]/15" />
           <div className="container-wide relative pb-14 pt-40">
             <nav aria-label="Sayfa yolu" className="text-sm text-white/70">
               <Link href="/" className="hover:text-white">Ana sayfa</Link>
@@ -64,15 +64,15 @@ export default async function CorporateDetailPage({ params }: CorporateRouteProp
           </div>
         </section>
 
-        <section className="section-space bg-[#fbfbfa]">
+        <section className="section-space bg-[#181D23]">
           <div className="container-wide grid items-start gap-12 lg:grid-cols-12">
             <div className="lg:col-span-5">
-              <p className="max-w-md font-serif text-3xl leading-snug text-[#1a1c1e]">{page.lead}</p>
+              <p className="max-w-md font-serif text-3xl leading-snug text-[#E2E8F0]">{page.lead}</p>
               <div className="editorial-rule mt-8 w-20" />
             </div>
             <div className="space-y-10 lg:col-span-6 lg:col-start-7">
               {page.chapters.map((chapter) => (
-                <article key={chapter.heading} className="border-t border-black/[0.08] pt-6">
+                <article key={chapter.heading} className="border-t border-white/10 pt-6">
                   <h2 className="font-serif text-2xl text-cream">{chapter.heading}</h2>
                   <p className="mt-3 text-base leading-relaxed text-muted">{chapter.text}</p>
                 </article>
@@ -81,15 +81,15 @@ export default async function CorporateDetailPage({ params }: CorporateRouteProp
           </div>
         </section>
 
-        <section className="bg-[#f4f3ef]">
+        <section className="bg-[#1F2630]">
           <div className="container-wide grid items-stretch lg:grid-cols-12">
             <div className="relative min-h-[22rem] lg:col-span-5">
               <Image src={page.portrait} alt={page.portraitAlt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 40vw" />
             </div>
-            <div className="grid gap-px bg-black/[0.08] lg:col-span-7 lg:grid-cols-1">
+            <div className="grid gap-px bg-white/10 lg:col-span-7 lg:grid-cols-1">
               {page.notes.map((note) => (
-                <article key={note.title} className="bg-[#f4f3ef] px-8 py-10 sm:px-12">
-                  <h2 className="font-serif text-2xl text-[#1a1c1e]">{note.title}</h2>
+                <article key={note.title} className="bg-[#1F2630] px-8 py-10 sm:px-12">
+                  <h2 className="font-serif text-2xl text-[#E2E8F0]">{note.title}</h2>
                   <p className="mt-3 max-w-md leading-relaxed text-muted">{note.text}</p>
                 </article>
               ))}
@@ -97,7 +97,7 @@ export default async function CorporateDetailPage({ params }: CorporateRouteProp
           </div>
         </section>
 
-        <section className="section-space bg-[#1a1c1e] text-[#f4f3ef]">
+        <section className="section-space bg-[#181D23] text-[#E2E8F0]">
           <div className="container-wide flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="text-[11px] tracking-[0.22em] text-gold-soft uppercase">Kurumsal içinde</p>

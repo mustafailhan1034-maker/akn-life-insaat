@@ -50,7 +50,7 @@ export default function UrbanPage() {
     <>
       <Header />
       <main className="flex-1 bg-background">
-        <section className="relative flex min-h-[70svh] items-end bg-[#1a1c1e] text-[#f4f3ef]">
+        <section className="relative flex min-h-[70svh] items-end bg-[#181D23] text-[#E2E8F0]">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -73,9 +73,9 @@ export default function UrbanPage() {
           <div className="container-wide">
             <p className="section-eyebrow">Süreç</p>
             <h2 className="mt-4 max-w-xl font-serif text-4xl text-cream">Dört adım, tek çerçeve.</h2>
-            <ol className="mt-12 grid gap-px bg-black/[0.08] md:grid-cols-2">
+            <ol className="mt-12 grid gap-px bg-white/10 md:grid-cols-2">
               {STEPS.map((step) => (
-                <li key={step.n} className="bg-[#fbfbfa] p-8">
+                <li key={step.n} className="bg-[#1F2630] p-8">
                   <p className="font-serif text-3xl text-gold-dark">{step.n}</p>
                   <h3 className="mt-4 font-serif text-2xl text-cream">{step.title}</h3>
                   <p className="mt-3 leading-relaxed text-muted">{step.text}</p>
@@ -90,13 +90,13 @@ export default function UrbanPage() {
             <div className="lg:col-span-4">
               <p className="section-eyebrow">Başvuru rehberi</p>
               <h2 className="mt-4 font-serif text-4xl text-cream">Görüşmeye neyle gelinir.</h2>
-              <Link href="/iletisim" className="mt-8 inline-flex h-12 items-center bg-[#1a1c1e] px-6 text-xs font-semibold tracking-[0.16em] text-[#f4f3ef] uppercase hover:bg-gold hover:text-navy">
+              <Link href="/iletisim" className="mt-8 inline-flex h-12 items-center bg-[#7B90A8] px-6 text-xs font-semibold tracking-[0.16em] text-[#181D23] uppercase hover:bg-[#C4D1DF]">
                 Teklif formu
               </Link>
             </div>
             <ol className="space-y-8 lg:col-span-7 lg:col-start-6">
               {GUIDE.map((item, index) => (
-                <li key={item.title} className="border-t border-black/[0.08] pt-6">
+                <li key={item.title} className="border-t border-white/10 pt-6">
                   <p className="text-[11px] tracking-[0.2em] text-gold-dark uppercase">0{index + 1}</p>
                   <h3 className="mt-2 font-serif text-2xl text-cream">{item.title}</h3>
                   <p className="mt-3 leading-relaxed text-muted">{item.text}</p>
@@ -110,7 +110,7 @@ export default function UrbanPage() {
           <div className="container-wide max-w-3xl">
             <p className="section-eyebrow">Sık sorulan sorular</p>
             <h2 className="mt-4 font-serif text-4xl text-cream">Kısa ve açık cevaplar.</h2>
-            <div className="mt-10 divide-y divide-black/[0.08] border-y border-black/[0.08]">
+            <div className="mt-10 divide-y divide-white/10 border-y border-white/10">
               {FAQ.map((item) => (
                 <details key={item.question} className="group py-5">
                   <summary className="cursor-pointer list-none font-serif text-2xl text-cream marker:content-none [&::-webkit-details-marker]:hidden">
