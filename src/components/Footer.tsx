@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <BrandLogo tone="light" />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/70">
-              AKN LİFE İNŞAAT — Kerem Akan. Pendik merkezli müteahhitlik, dönüşüm, konut ve yenileme.
+              AKN LİFE İNŞAAT — Said Akın. İstanbul ve Marmara Bölgesi’nde müteahhitlik, dönüşüm, konut ve yenileme.
             </p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/65">
               {SITE.address.full}

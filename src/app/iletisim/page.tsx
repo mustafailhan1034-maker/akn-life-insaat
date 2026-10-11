@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "İletişim",
   description:
-    "AKN Life İnşaat iletişim: Pendik, İstanbul ofisi ve teklif formu. Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22.",
+    "AKN Life İnşaat iletişim: İstanbul ofisi ve teklif formu. Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22.",
   path: "/iletisim",
 });
 

@@ -1,8 +1,8 @@
 const STATS = [
   { value: "08", label: "Hizmet alanı" },
   { value: "04", label: "Süreç adımı" },
-  { value: "Pendik", label: "Merkez ofis" },
-  { value: "İstanbul", label: "Çalışma bölgesi" },
+  { value: "İstanbul", label: "Merkez ofis" },
+  { value: "Marmara", label: "Çalışma bölgesi" },
 ] as const;
 
 export default function StatsBand() {

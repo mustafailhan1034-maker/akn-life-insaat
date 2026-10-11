@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Kurumsal",
   description:
-    "AKN Life İnşaat kurumsal sayfası: Kerem Akan liderliğinde Pendik merkezli firma. Hakkımızda, biz kimiz, misyon ve vizyon.",
+    "AKN Life İnşaat kurumsal sayfası: Said Akın liderliğinde İstanbul ve Marmara Bölgesi’nde çalışan firma. Hakkımızda, biz kimiz, misyon ve vizyon.",
   path: "/kurumsal",
 });
 
@@ -34,7 +34,7 @@ export default function KurumsalPage() {
             <p className="text-[11px] tracking-[0.28em] text-gold-soft uppercase">AKN Life İnşaat</p>
             <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-tight sm:text-6xl">Kurumsal</h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75">
-              {SITE.legalName}. Pendik merkezli müteahhitlik; konut, dönüşüm ve yenilemede aynı iş disiplini.
+              {SITE.legalName}. İstanbul ve Marmara’da müteahhitlik; konut, dönüşüm ve yenilemede aynı iş disiplini.
             </p>
           </div>
         </section>
@@ -48,7 +48,7 @@ export default function KurumsalPage() {
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted lg:col-span-7 lg:col-start-6">
               <p>
-                Firmayı Kerem Akan yönetir. Merkez adres {SITE.address.full}. Vergi kaydı {SITE.taxOffice} {SITE.taxNumber}.
+                Firmayı Said Akın yönetir. Merkez adres {SITE.address.full}. Vergi kaydı {SITE.taxOffice} {SITE.taxNumber}.
               </p>
               <p>
                 Aşağıdaki sayfalar firmanın kimliğini, çalışma biçimini ve yönünü ayrı ayrı anlatır. Tarihli bir kuruluş kronolojisi yayımlanmamıştır; burada kayıtlardaki unvan, adres ve iş disiplini durur.

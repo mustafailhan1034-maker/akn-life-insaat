@@ -1,4 +1,4 @@
-const BADGES = ["Şeffaf süreç", "Kaliteli işçilik", "Pendik / İstanbul"] as const;
+const BADGES = ["Şeffaf süreç", "Kaliteli işçilik", "İstanbul / Marmara"] as const;
 
 export default function TrustBadges({ className = "" }: { className?: string }) {
   return (

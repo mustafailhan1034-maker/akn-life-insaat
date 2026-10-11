@@ -4,12 +4,12 @@ export { SERVICES };
 export const SITE = {
   name: "AKN Life İnşaat",
   nameDisplay: "AKN LİFE İNŞAAT",
-  legalName: "AKN LİFE İNŞAAT - KEREM AKAN",
-  founder: "Kerem Akan",
+  legalName: "AKN LİFE İNŞAAT - SAİD AKIN",
+  founder: "Said Akın",
   domain: "aknlifeinsaat.com",
   tagline: "Güvenle yükselen yaşam alanları",
   description:
-    "AKN Life İnşaat, Kerem Akan liderliğinde Pendik merkezli müteahhitlik, kentsel dönüşüm, konut ve yenileme hizmeti sunar.",
+    "AKN Life İnşaat, Said Akın liderliğinde İstanbul ve Marmara Bölgesi’nde müteahhitlik, kentsel dönüşüm, konut ve yenileme hizmeti sunar.",
   phone: "",
   phoneDisplay: "",
   whatsappNumber: "",
@@ -20,7 +20,7 @@ export const SITE = {
     full: "Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22 Pendik / İSTANBUL",
     line1: "Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22",
     line2: "Pendik / İSTANBUL",
-    short: "Pendik, İstanbul",
+    short: "İstanbul",
   },
   mapsEmbed:
     "https://www.google.com/maps?q=Velibaba+Mah.+Hukuk%C3%A7ular+Cad.+No:38+Pendik+%C4%B0stanbul&hl=tr&z=16&output=embed",
@@ -137,7 +137,7 @@ export const PROCESS = [
   },
 ] as const;
 
-export const SERVICE_AREA = ["Pendik", "İstanbul"] as const;
+export const SERVICE_AREA = ["İstanbul", "Marmara Bölgesi"] as const;
 
 export type Service = (typeof SERVICES)[number];
 
@@ -149,7 +149,7 @@ export const PROJECTS = {
   ongoing: [
     {
       title: "Velibaba Yaşam Evleri",
-      place: "Pendik",
+      place: "İstanbul",
       kind: "Konut",
       text: "Aile yaşamına göre kurgulanmış daire planları ve sakin bir avlu düzeni. Uygulama süreci devam etmektedir.",
       image:
@@ -159,7 +159,7 @@ export const PROJECTS = {
     },
     {
       title: "Hukukçular Dönüşüm",
-      place: "Pendik",
+      place: "İstanbul",
       kind: "Kentsel Dönüşüm",
       text: "Mevcut dokuyu güçlendiren, güncel yaşam standartlarına taşınan bir dönüşüm kurgusu.",
       image:
@@ -193,7 +193,7 @@ export const PROJECTS = {
   planned: [
     {
       title: "Velibaba Atölye",
-      place: "Pendik",
+      place: "Marmara",
       kind: "Ticari",
       text: "Küçük ölçekli bir ticari yapı için hazırlanmış temsili bir plan kurgusu. Henüz uygulanmış bir iş değildir.",
       image:
@@ -202,8 +202,8 @@ export const PROJECTS = {
       href: "/hizmetlerimiz/ticari-ve-endustriyel-yapilar",
     },
     {
-      title: "Pendik Konut Adası",
-      place: "Pendik",
+      title: "Marmara Konut Adası",
+      place: "Marmara",
       kind: "Toplu konut",
       text: "Ortak avlulu bir konut yerleşimi için hazırlanmış temsili bir plan. Teslim edilmiş bir proje değildir.",
       image:
@@ -245,12 +245,12 @@ export const FAQ = [
   {
     question: "Ofis nerede?",
     answer:
-      "AKN Life İnşaat — Kerem Akan, Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22, Pendik / İstanbul adresindedir. Vergi dairesi Pendik V.D., vergi numarası 0120212888.",
+      "AKN Life İnşaat — Said Akın, Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22, Pendik / İstanbul adresindedir. Vergi dairesi Pendik V.D., vergi numarası 0120212888.",
   },
   {
     question: "Hangi işleri üstleniyorsunuz?",
     answer:
-      "Konut projeleri, kentsel dönüşüm, iç mimari ve taahhüt ile proje danışmanlığı. Çalışma merkezimiz Pendik, hizmet bölgemiz İstanbul.",
+      "Konut projeleri, kentsel dönüşüm, iç mimari ve taahhüt ile proje danışmanlığı. Bölgedeki işlerimiz İstanbul ve Marmara Bölgesi’nde yürür.",
   },
   {
     question: "Süreç nasıl ilerler?",
@@ -267,7 +267,7 @@ export const FAQ = [
 export const TESTIMONIALS = [
   {
     name: "Konut sahibi",
-    role: "Örnek ifade · Pendik",
+    role: "Örnek ifade · İstanbul",
     text: "Kapsam baştan yazılsın, sürpriz kalem çıkmasın ve teslim edilen ev anlatılan ev olsun.",
   },
   {

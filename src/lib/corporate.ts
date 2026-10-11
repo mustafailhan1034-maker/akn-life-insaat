@@ -6,19 +6,19 @@ export const CORPORATE_PAGES = [
     slug: "hakkimizda",
     name: "Hakkımızda",
     eyebrow: "Kurumsal · Hakkımızda",
-    title: "Pendik’te kayıtlı, şantiyede izlenen bir inşaat pratiği.",
-    lead: "AKN Life İnşaat, Kerem Akan liderliğinde Pendik merkezli bir müteahhitlik firmasıdır. İşin adı, konuşulan kapsamın teslim edilen yapıda karşılık bulmasıdır.",
+    title: "Kayıtlı ofisten, şantiyede izlenen bir inşaat pratiği.",
+    lead: "AKN Life İnşaat, Said Akın liderliğinde İstanbul ve Marmara Bölgesi’nde çalışan bir müteahhitlik firmasıdır. İşin adı, konuşulan kapsamın teslim edilen yapıda karşılık bulmasıdır.",
     image: frame("photo-1600585154340-be6161a56a0c"),
     alt: "Aydınlık, modern bir konut cephesi",
     portrait: frame("photo-1503387762-592deb58ef4e"),
     portraitAlt: "Mimari plan ve maket üzerinde çalışma",
     seoTitle: "Hakkımızda",
     seoDescription:
-      "AKN Life İnşaat hakkında: Kerem Akan liderliğinde Pendik merkezli müteahhitlik, kentsel dönüşüm, konut ve yenileme.",
+      "AKN Life İnşaat hakkında: Said Akın liderliğinde İstanbul ve Marmara Bölgesi’nde müteahhitlik, kentsel dönüşüm, konut ve yenileme.",
     chapters: [
       {
         heading: "Kayıtlı kimlik",
-        text: "Firmanın unvanı AKN LİFE İNŞAAT - KEREM AKAN’dır. Merkez, Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22, Pendik / İstanbul adresindedir. Vergi kaydı Pendik Vergi Dairesi 0120212888.",
+        text: "Firmanın unvanı AKN LİFE İNŞAAT - SAİD AKIN’dır. Merkez, Velibaba Mah. Hukukçular Cad. No:38 İç Kapı No:22, Pendik / İstanbul adresindedir. Vergi kaydı Pendik Vergi Dairesi 0120212888.",
       },
       {
         heading: "Ne yapılır",
@@ -40,22 +40,22 @@ export const CORPORATE_PAGES = [
     name: "Biz Kimiz",
     eyebrow: "Kurumsal · Biz Kimiz",
     title: "Karar, malzeme ve takvim aynı masada.",
-    lead: "Firmayı Kerem Akan yönetir. Pendik ofisinden İstanbul’daki işlere bakılır. Ekip dili sadedir: ölçülen kapsam, izlenen şantiye.",
+    lead: "Firmayı Said Akın yönetir. İşler İstanbul ve Marmara ölçeğinde okunur. Ekip dili sadedir: ölçülen kapsam, izlenen şantiye.",
     image: frame("photo-1600210492486-724fe5c67fb0"),
     alt: "Taş ve ahşap detaylı, aydınlık bir iç mekân",
     portrait: frame("photo-1613490493576-7fde63acd811"),
     portraitAlt: "Bahçeli modern bir konut",
     seoTitle: "Biz Kimiz",
     seoDescription:
-      "AKN Life İnşaat’ı Kerem Akan yönetir. Pendik merkezli ekip, konut, dönüşüm ve yenilemede tek bir iş disipliniyle çalışır.",
+      "AKN Life İnşaat’ı Said Akın yönetir. Ekip, konut, dönüşüm ve yenilemede tek bir iş disipliniyle çalışır.",
     chapters: [
       {
         heading: "Yönetim",
-        text: "İşi Kerem Akan sahiplenir. Kapsam, malzeme ve takvim ayrı odalarda dağılmaz. Hak sahibiyle konuşulan cümle, uygulamada aynı kalır.",
+        text: "İşi Said Akın sahiplenir. Kapsam, malzeme ve takvim ayrı odalarda dağılmaz. Hak sahibiyle konuşulan cümle, uygulamada aynı kalır.",
       },
       {
         heading: "Çalışma alanı",
-        text: "Merkez Pendik’tedir. İşler İstanbul ölçeğinde, yapının kendi koşuluna göre ele alınır. Her parsel kendi dosyasıyla yürür.",
+        text: "İşler İstanbul ve Marmara Bölgesi ölçeğinde, yapının kendi koşuluna göre ele alınır. Her parsel kendi dosyasıyla yürür.",
       },
       {
         heading: "Üslup",
@@ -73,14 +73,14 @@ export const CORPORATE_PAGES = [
     name: "Misyon ve Vizyon",
     eyebrow: "Kurumsal · Misyon ve Vizyon",
     title: "Sözü şantiyede duran bir inşaat anlayışı.",
-    lead: "Misyon, konuşulan kapsamı teslim etmektir. Vizyon, Pendik ve İstanbul’da uzun yıllar yaşanacak, ölçüsü kaçmamış yapılar kurmaktır.",
+    lead: "Misyon, konuşulan kapsamı teslim etmektir. Vizyon, İstanbul ve Marmara Bölgesi’nde uzun yıllar yaşanacak, ölçüsü kaçmamış yapılar kurmaktır.",
     image: frame("photo-1487958449943-2429e8be8625"),
     alt: "Heykelsi, modern bir yapı cephesi",
     portrait: frame("photo-1600607687939-ce8a6c25118c"),
     portraitAlt: "Geniş pencereli sade bir yaşam alanı",
     seoTitle: "Misyon ve Vizyon",
     seoDescription:
-      "AKN Life İnşaat misyon ve vizyonu: şeffaf kapsam, kalıcı işçilik ve Pendik ile İstanbul’da sakin, güvenli yapılar.",
+      "AKN Life İnşaat misyon ve vizyonu: şeffaf kapsam, kalıcı işçilik ve İstanbul ile Marmara Bölgesi’nde sakin, güvenli yapılar.",
     chapters: [
       {
         heading: "Misyon",
@@ -88,7 +88,7 @@ export const CORPORATE_PAGES = [
       },
       {
         heading: "Vizyon",
-        text: "Konut, dönüşüm ve yenilemede güncel yaşamın gerektirdiği sağlamlığı, sakin bir mimari dille kurmak. Pendik merkezli bir ofisten İstanbul’a bakmak.",
+        text: "Konut, dönüşüm ve yenilemede güncel yaşamın gerektirdiği sağlamlığı, sakin bir mimari dille kurmak. Bölgedeki işlerimiz bu ölçüyle yürür.",
       },
       {
         heading: "Ölçü",
@@ -98,7 +98,7 @@ export const CORPORATE_PAGES = [
     notes: [
       { title: "Şeffaf kapsam", text: "Ek kalem, süreç içinde açıkça paylaşılır." },
       { title: "Kalıcı işçilik", text: "Detay, ilk seferde sağlam teslim için tutulur." },
-      { title: "Yerel bağ", text: "Ofis Pendik’tedir; bölge İstanbul’dur." },
+      { title: "Yerel bağ", text: "İşler İstanbul ve Marmara Bölgesi ölçeğinde yürür." },
     ],
   },
 ] as const;

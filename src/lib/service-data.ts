@@ -21,7 +21,7 @@ export const SERVICES = [
     ],
     seoTitle: "İnşaat ve Müteahhitlik Hizmetleri",
     seoDescription:
-      "AKN Life İnşaat müteahhitlik: Pendik ve İstanbul’da konut, villa ve ticari yapılarda planlamadan teslime inşaat yönetimi.",
+      "AKN Life İnşaat müteahhitlik: İstanbul ve Marmara Bölgesi’nde konut, villa ve ticari yapılarda planlamadan teslime inşaat yönetimi.",
     image: shot("photo-1600585154340-be6161a56a0c", ""),
     alt: "Geniş camlı modern bir konut",
   },
@@ -44,7 +44,7 @@ export const SERVICES = [
     ],
     seoTitle: "Kentsel Dönüşüm Projeleri",
     seoDescription:
-      "AKN Life İnşaat kentsel dönüşüm: Pendik ve İstanbul’da riskli yapıları güvenli ve modern yaşam alanlarına taşıyan planlı süreç.",
+      "AKN Life İnşaat kentsel dönüşüm: İstanbul ve Marmara Bölgesi’nde riskli yapıları güvenli ve modern yaşam alanlarına taşıyan planlı süreç.",
     image: shot("photo-1487958449943-2429e8be8625", ""),
     alt: "Modern bir yapı cephesi",
   },

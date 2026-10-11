@@ -26,7 +26,7 @@ export default function BrandLogo({
     <Link
       href={href}
       scroll
-      aria-label="AKN Life İnşaat, Kerem Akan"
+      aria-label="AKN Life İnşaat"
       className={`inline-flex shrink-0 items-center ${align === "center" ? "justify-center" : ""}`}
       onClick={(event) => {
         onClick?.(event);
@@ -36,9 +36,9 @@ export default function BrandLogo({
     >
       <Image
         src="/logo.png"
-        alt="AKN Life İnşaat — Kerem Akan"
-        width={487}
-        height={350}
+        alt="AKN Life İnşaat"
+        width={519}
+        height={639}
         priority={priority}
         className={
           size === "header"

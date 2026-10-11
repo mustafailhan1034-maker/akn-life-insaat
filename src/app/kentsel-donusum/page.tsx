@@ -9,7 +9,7 @@ import { faqJsonLd, pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Kentsel Dönüşüm",
   description:
-    "AKN Life İnşaat kentsel dönüşüm: Pendik ve İstanbul’da riskli yapılar için süreç, başvuru rehberi ve sık sorulan sorular.",
+    "AKN Life İnşaat kentsel dönüşüm: İstanbul ve Marmara Bölgesi’nde riskli yapılar için süreç, başvuru rehberi ve sık sorulan sorular.",
   path: "/kentsel-donusum",
 });
 
@@ -23,7 +23,7 @@ const STEPS = [
 const GUIDE = [
   { title: "Yapıyı tarif edin", text: "Adres, kat sayısı ve varsa mevcut raporlar görüşmenin ilk cümlesidir. Eksik bilgiyle süre verilmez." },
   { title: "Hak sahiplerini netleştirin", text: "Dönüşüm, tek bir daire kararı değildir. Katılanlar ve beklenti baştan yazılır." },
-  { title: "Ofise yazın", text: "Başvuru, iletişim formundan veya Pendik ofisinden yapılır. Telefon hattı kayıtlarda yoksa form yeterlidir." },
+  { title: "Ofise yazın", text: "Başvuru iletişim formundan yapılır. Telefon hattı kayıtlarda yoksa form yeterlidir." },
 ];
 
 const FAQ = [
@@ -61,7 +61,7 @@ export default function UrbanPage() {
             aria-label="Kentsel dönüşüm için modern bir cephe"
           />
           <div className="container-wide relative pb-16 pt-36">
-            <p className="text-[11px] tracking-[0.28em] text-gold-soft uppercase">Pendik · İstanbul</p>
+            <p className="text-[11px] tracking-[0.28em] text-gold-soft uppercase">İstanbul · Marmara</p>
             <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-tight sm:text-6xl">Kentsel dönüşüm, sakin bir dille.</h1>
             <p className="mt-6 max-w-xl text-white/75">
               Ekonomik ömrünü tamamlamış ve riskli yapıları, güncel yönetmelik çerçevesinde güvenli yaşam alanlarına taşımak için genel süreç.

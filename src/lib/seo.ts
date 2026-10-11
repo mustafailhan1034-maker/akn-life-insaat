@@ -5,21 +5,21 @@ export const OG_IMAGE = {
   url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
   width: 1200,
   height: 630,
-  alt: "AKN Life İnşaat, Pendik merkezli modern konut mimarisi",
+  alt: "AKN Life İnşaat, İstanbul’da modern konut mimarisi",
 } as const;
 
 export const SEO = {
-  title: "AKN Life İnşaat | Pendik Konut ve Kentsel Dönüşüm",
+  title: "AKN Life İnşaat | İstanbul Konut ve Kentsel Dönüşüm",
   description:
-    "AKN Life İnşaat, Kerem Akan liderliğinde Pendik’te müteahhitlik, kentsel dönüşüm, anahtar teslim konut ve yenileme yürütür. Velibaba Mah. Hukukçular Cad. No:38.",
+    "AKN Life İnşaat, Said Akın liderliğinde İstanbul ve Marmara Bölgesi’nde müteahhitlik, kentsel dönüşüm, anahtar teslim konut ve yenileme yürütür. Velibaba Mah. Hukukçular Cad. No:38.",
   keywords: [
     "AKN Life İnşaat",
-    "Kerem Akan",
-    "Pendik inşaat firması",
-    "Pendik kentsel dönüşüm",
+    "Said Akın",
+    "İstanbul inşaat firması",
+    "Marmara kentsel dönüşüm",
     "anahtar teslim inşaat",
     "konut ve toplu yapı",
-    "bina yenileme Pendik",
+    "bina yenileme İstanbul",
   ],
 } as const;
 
@@ -83,8 +83,8 @@ export const localBusinessJsonLd = {
     addressCountry: "TR",
   },
   areaServed: [
-    { "@type": "AdministrativeArea", name: "Pendik" },
     { "@type": "City", name: "İstanbul" },
+    { "@type": "AdministrativeArea", name: "Marmara Bölgesi" },
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",

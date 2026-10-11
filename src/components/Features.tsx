@@ -19,7 +19,7 @@ export default function Features() {
           <h2 className="mt-4 font-serif text-4xl text-cream sm:text-5xl">Vizyonu olan bir inşaat anlayışı.</h2>
           <div className="editorial-rule mt-6 w-20" />
           <p className="mt-6 text-base leading-relaxed text-muted sm:text-lg">
-            AKN Life İnşaat, güvenilir, modern ve kaliteli yaşam alanları inşa etmek üzere Kerem Akan liderliğinde faaliyet gösterir. Pendik’teki merkezimizden yola çıkarak her yapıyı uzun yıllar yaşanacak bir değer olarak ele alırız.
+            AKN Life İnşaat, güvenilir, modern ve kaliteli yaşam alanları inşa etmek üzere Said Akın liderliğinde faaliyet gösterir. İstanbul ve Marmara’daki işlerimizde her yapıyı uzun yıllar yaşanacak bir değer olarak ele alırız.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Doğru mühendislik, seçici malzeme, şeffaf süreç ve estetik bütünlük aynı ilkenin parçasıdır: söz verilen kaliteyi planlı ve izlenebilir biçimde hayata geçirmek.
