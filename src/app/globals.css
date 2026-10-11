@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfbfa;
+  --foreground: #2b2c2e;
+  --surface: #ffffff;
+  --beige: #f4f3ef;
+  --stone: #f4f3ef;
+  --cream: #2b2c2e;
+  --muted: #6a675f;
+  --gold: #c5a880;
+  --gold-soft: #e6d3b3;
+  --gold-dark: #8c7350;
+  --navy: #1a1c1e;
+  --line: rgba(43, 44, 46, 0.12);
+  --line-gold: rgba(184, 155, 114, 0.7);
+  --header-offset: 4.75rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --header-offset: 5.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --header-offset: 5.75rem;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-beige: var(--beige);
+  --color-stone: var(--stone);
+  --color-cream: var(--cream);
+  --color-muted: var(--muted);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-gold-dark: var(--gold-dark);
+  --color-navy: var(--navy);
+  --color-line: var(--line);
+  --color-line-gold: var(--line-gold);
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-display);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(900px 420px at 0% -10%, rgba(197, 168, 128, 0.16), transparent 55%),
+    radial-gradient(700px 380px at 100% 0%, rgba(244, 243, 239, 0.8), transparent 42%);
+  color: var(--foreground);
+  font-family: var(--font-outfit), "Segoe UI", sans-serif;
+  padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+section[id] {
+  scroll-margin-top: var(--header-offset);
+}
+
+::selection {
+  background: #c5a880;
+  color: #1a1c1e;
+}
+
+input,
+textarea {
+  color: var(--cream);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(43, 44, 46, 0.45);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes line-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes hero-kenburns {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); }
+}
+
+@keyframes hero-stagger-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.animate-fade-up { animation: fade-up 0.85s ease-out both; }
+.animate-float-soft { animation: float-soft 5s ease-in-out infinite; }
+.hero-crossfade {
+  transition: opacity 1.4s ease;
+}
+.hero-track {
+  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
+  will-change: transform;
+}
+.hero-kenburns { animation: hero-kenburns 9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-stagger-1 { animation: hero-stagger-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both; }
+.hero-stagger-2 { animation: hero-stagger-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both; }
+.hero-stagger-3 { animation: hero-stagger-in 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.24s both; }
+.hero-stagger-4 { animation: hero-stagger-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.34s both; }
+.hero-progress { animation-name: hero-progress; animation-timing-function: linear; animation-fill-mode: forwards; }
+.animate-pulse-soft { animation: pulse-soft 2.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-crossfade,
+  .hero-track,
+  .hero-kenburns,
+  .hero-stagger-1,
+  .hero-stagger-2,
+  .hero-stagger-3,
+  .hero-stagger-4,
+  .hero-progress,
+  .animate-pulse-soft,
+  .animate-float-soft {
+    animation: none !important;
+  }
+  .hero-track { transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+.editorial-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-gold), transparent);
+}
+
+.section-eyebrow {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--gold-dark);
+}
+
+.section-space { padding-block: 5.5rem; }
+
+@media (min-width: 640px) {
+  .section-space { padding-block: 7rem; }
+}
+
+@media (min-width: 1024px) {
+  .section-space { padding-block: 8.5rem; }
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-wide { padding-inline: 2rem; }
+}
+
+@media (min-width: 1024px) {
+  .container-wide { padding-inline: 3rem; }
+}
